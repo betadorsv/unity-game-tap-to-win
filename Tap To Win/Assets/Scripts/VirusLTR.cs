@@ -26,7 +26,7 @@ public class VirusLTR : MonoBehaviour
 
         if (transform.position.x > screenX)
         {
-        Debug.Log(screenX);
+        
 
             Destroy(this.gameObject);
         }

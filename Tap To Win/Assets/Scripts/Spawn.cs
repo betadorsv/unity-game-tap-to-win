@@ -14,20 +14,20 @@ public class Spawn : MonoBehaviour
     {
         StartCoroutine(VirusWare());
     }
+    IEnumerator VirusWare()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(respawnTime);
+            SpawnEnemy();
+        }
+    }
     private void SpawnEnemy()
     {
-        Debug.Log("ok");
         GameObject a = Instantiate(virus) as GameObject;
         a.transform.position = new Vector2(screenX , Random.Range(minY, maxY));
     }
 
     // Update is called once per frame
-    IEnumerator VirusWare()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(2);
-            SpawnEnemy();
-        }
-    }
+    
 }

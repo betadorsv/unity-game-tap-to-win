@@ -12,6 +12,9 @@ public class TapToFly : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+
+   
+
     // Update is called once per frame
     void Update()
     {
@@ -21,4 +24,5 @@ public class TapToFly : MonoBehaviour
             rb.velocity = Vector2.up * velocity;
         }
     }
+  
 }

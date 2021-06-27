@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 230772610398505953}
   - component: {fileID: 8847716882336504762}
   - component: {fileID: 6382868459938312165}
-  - component: {fileID: -6799335807420357291}
+  - component: {fileID: -6394712183197299235}
+  - component: {fileID: 1144323904802123214}
   m_Layer: 0
   m_Name: VirusRTL
-  m_TagString: Untagged
+  m_TagString: Virus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1993387426172959525}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1.113, y: 1.136, z: -4.25}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -135,8 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f490fdbfef5864e8b551004da27412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
---- !u!114 &-6799335807420357291
+  speed: 15
+--- !u!114 &-6394712183197299235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,11 +146,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993387426172959525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d7ef338723aaff4d9e36dcd7e1d0376, type: 3}
+  m_Script: {fileID: 11500000, guid: b72dd5a524c4e514c9830b1079240354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virus: {fileID: 1993387426172959525}
-  respawnTime: 1
-  screenX: 17
-  minY: -4
-  maxY: 4.24
+--- !u!114 &1144323904802123214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993387426172959525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdc834859084524eb89c00400df992a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 0}
