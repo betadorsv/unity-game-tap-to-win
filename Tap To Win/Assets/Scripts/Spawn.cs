@@ -25,6 +25,7 @@ public class Spawn : MonoBehaviour
     private void SpawnEnemy()
     {
         GameObject a = Instantiate(virus) as GameObject;
+        Debug.Log(Random.Range(minY, maxY));
         a.transform.position = new Vector2(screenX , Random.Range(minY, maxY));
     }
 
